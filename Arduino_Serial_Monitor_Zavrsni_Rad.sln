@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arduino_Serial_Monitor_Zavrsni_Rad", "Arduino_Serial_Monitor_Zavrsni_Rad\Arduino_Serial_Monitor_Zavrsni_Rad.csproj", "{3280CEFE-7126-4EE4-A2D0-D964C89BE860}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3280CEFE-7126-4EE4-A2D0-D964C89BE860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3280CEFE-7126-4EE4-A2D0-D964C89BE860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3280CEFE-7126-4EE4-A2D0-D964C89BE860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3280CEFE-7126-4EE4-A2D0-D964C89BE860}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B95A8B4-611A-4570-8427-DFD1C8C23804}
+	EndGlobalSection
+EndGlobal
