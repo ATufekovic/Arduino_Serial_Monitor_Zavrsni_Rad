@@ -63,7 +63,6 @@
             this.button_return_to_zero = new System.Windows.Forms.Button();
             this.button_homing_cycle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.numericUpDownSuffix_step_multiplier = new Arduino_Serial_Monitor_Zavrsni_Rad.NumericUpDownSuffix();
             this.label6 = new System.Windows.Forms.Label();
             this.button_Zminus = new System.Windows.Forms.Button();
             this.button_Zplus = new System.Windows.Forms.Button();
@@ -79,12 +78,14 @@
             this.tabPage_convert = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button_about = new System.Windows.Forms.Button();
+            this.numericUpDownSuffix_step_multiplier = new Arduino_Serial_Monitor_Zavrsni_Rad.NumericUpDownSuffix();
+            this.button_exit = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage_joystick.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSuffix_step_multiplier)).BeginInit();
             this.tabPage_queue.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSuffix_step_multiplier)).BeginInit();
             this.SuspendLayout();
             // 
             // button_search_ports
@@ -445,20 +446,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "XYZ motor Joystick";
             // 
-            // numericUpDownSuffix_step_multiplier
-            // 
-            this.numericUpDownSuffix_step_multiplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSuffix_step_multiplier.Location = new System.Drawing.Point(186, 19);
-            this.numericUpDownSuffix_step_multiplier.Name = "numericUpDownSuffix_step_multiplier";
-            this.numericUpDownSuffix_step_multiplier.Size = new System.Drawing.Size(81, 26);
-            this.numericUpDownSuffix_step_multiplier.TabIndex = 13;
-            this.numericUpDownSuffix_step_multiplier.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDownSuffix_step_multiplier.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -470,7 +457,7 @@
             // 
             // button_Zminus
             // 
-            this.button_Zminus.Location = new System.Drawing.Point(172, 62);
+            this.button_Zminus.Location = new System.Drawing.Point(95, 62);
             this.button_Zminus.Name = "button_Zminus";
             this.button_Zminus.Size = new System.Drawing.Size(37, 32);
             this.button_Zminus.TabIndex = 5;
@@ -480,7 +467,7 @@
             // 
             // button_Zplus
             // 
-            this.button_Zplus.Location = new System.Drawing.Point(129, 62);
+            this.button_Zplus.Location = new System.Drawing.Point(95, 24);
             this.button_Zplus.Name = "button_Zplus";
             this.button_Zplus.Size = new System.Drawing.Size(37, 32);
             this.button_Zplus.TabIndex = 4;
@@ -602,12 +589,38 @@
             this.button_about.TabIndex = 13;
             this.button_about.Text = "About";
             this.button_about.UseVisualStyleBackColor = true;
+            this.button_about.Click += new System.EventHandler(this.Button_about_Click);
+            // 
+            // numericUpDownSuffix_step_multiplier
+            // 
+            this.numericUpDownSuffix_step_multiplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSuffix_step_multiplier.Location = new System.Drawing.Point(186, 19);
+            this.numericUpDownSuffix_step_multiplier.Name = "numericUpDownSuffix_step_multiplier";
+            this.numericUpDownSuffix_step_multiplier.Size = new System.Drawing.Size(81, 26);
+            this.numericUpDownSuffix_step_multiplier.TabIndex = 13;
+            this.numericUpDownSuffix_step_multiplier.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownSuffix_step_multiplier.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // button_exit
+            // 
+            this.button_exit.Location = new System.Drawing.Point(320, 95);
+            this.button_exit.Name = "button_exit";
+            this.button_exit.Size = new System.Drawing.Size(75, 23);
+            this.button_exit.TabIndex = 14;
+            this.button_exit.Text = "Exit";
+            this.button_exit.UseVisualStyleBackColor = true;
+            this.button_exit.Click += new System.EventHandler(this.Button_exit_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 472);
+            this.Controls.Add(this.button_exit);
             this.Controls.Add(this.button_about);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.textBox_receive);
@@ -637,9 +650,9 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSuffix_step_multiplier)).EndInit();
             this.tabPage_queue.ResumeLayout(false);
             this.tabPage_queue.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSuffix_step_multiplier)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -697,6 +710,7 @@
         private System.Windows.Forms.Label label_queue_file_path;
         private System.Windows.Forms.Label label_queue_file_number_of_lines;
         private System.Windows.Forms.Button button_about;
+        private System.Windows.Forms.Button button_exit;
     }
 }
 

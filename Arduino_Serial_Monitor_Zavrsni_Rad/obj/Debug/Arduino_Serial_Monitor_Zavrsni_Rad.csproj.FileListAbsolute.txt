@@ -8,3 +8,4 @@ C:\Users\Anto\source\repos\Arduino_Serial_Monitor_Zavrsni_Rad\Arduino_Serial_Mon
 C:\Users\Anto\source\repos\Arduino_Serial_Monitor_Zavrsni_Rad\Arduino_Serial_Monitor_Zavrsni_Rad\obj\Debug\Arduino_Serial_Monitor_Zavrsni_Rad.csproj.CoreCompileInputs.cache
 C:\Users\Anto\source\repos\Arduino_Serial_Monitor_Zavrsni_Rad\Arduino_Serial_Monitor_Zavrsni_Rad\obj\Debug\Arduino_Serial_Monitor_Zavrsni_Rad.exe
 C:\Users\Anto\source\repos\Arduino_Serial_Monitor_Zavrsni_Rad\Arduino_Serial_Monitor_Zavrsni_Rad\obj\Debug\Arduino_Serial_Monitor_Zavrsni_Rad.pdb
+C:\Users\Anto\source\repos\Arduino_Serial_Monitor_Zavrsni_Rad\Arduino_Serial_Monitor_Zavrsni_Rad\obj\Debug\Arduino_Serial_Monitor_Zavrsni_Rad.Form_help.resources

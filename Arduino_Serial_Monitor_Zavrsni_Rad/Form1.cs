@@ -13,6 +13,8 @@ namespace Arduino_Serial_Monitor_Zavrsni_Rad
             InitializeComponent();
         }
 
+        private static Form_help form_Help = null;
+
         private SerialPort myPort = new SerialPort();
         private string[] ports;
         private string comPort = "";
@@ -276,6 +278,29 @@ namespace Arduino_Serial_Monitor_Zavrsni_Rad
                 string[] text_lines = Regex.Split(textBox_queue_text_editor.Text.Trim(), "\r\n");
                 int line_count = text_lines.Length;
                 label_queue_file_number_of_lines.Text = "# of lines: " + line_count.ToString();
+            }
+        }
+
+        private void Button_about_Click(object sender, EventArgs e)
+        {
+            if (form_Help == null)
+            {
+                form_Help = new Form_help();
+                form_Help.FormClosed += delegate { form_Help = null; };
+                form_Help.Show();
+            }
+            else
+            {
+                form_Help.BringToFront();
+            }
+        }
+
+        private void Button_exit_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Exit", MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
             }
         }
     }
